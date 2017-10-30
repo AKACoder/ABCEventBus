@@ -1,5 +1,5 @@
 # ABCEventBus
-An simple post/receive event bus.  
+An simple post/receive eventbus.  
 
 ### about README and  'ABC'
 - My english is not good enough, so i use google translate to complete this README.  
