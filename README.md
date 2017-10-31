@@ -1,13 +1,16 @@
 # ABCEventBus
 An simple post/receive eventbus.  
 
+### 中文 [README](https://github.com/AKACoder/ABCEventBus/blob/master/README_zh.md)
+An simple post/receive eventbus.   
+
 ### about README and  'ABC'
 - My english is not good enough, so i use google translate to complete this README.  
 - '**ABC**' is for '**available but chaos**'.  
 
 ### key features (doesn't mean it's good)  
 - Async and name based post/receive  
-- Provide **announcement** (will be explained later )  
+- Provide **announcement** ([explain](https://github.com/AKACoder/ABCEventBus/blob/master/README.md#what-is-announcement))  
 - Implemented by the callback  
 - All receivers will be executed in the background queue  
 
@@ -36,7 +39,7 @@ or add the file to your project directly
 ABCEventBus.Post(...)
 ```
 
-**receiver must complain ABCMessageReceiver protocol**  
+**receiver must conform ABCMessageReceiver protocol**  
 ```swift
 protocol ABCMessageReceiver: class {
     func Receive(_ message: ABCMessage)
@@ -75,7 +78,7 @@ Publish(for name: String, data: Any?) -> ABCAnnouncement
 //cancel announcement
 Cancel(announcement: ABCAnnouncement, from name: String)
 
-//cancel all announcement(from name: String)
+//cancel all announcement
 CancelAllAnnouncement(from name: String)
  
 ```
