@@ -2,7 +2,6 @@
 An simple post/receive eventbus.  
 
 ### 中文 [README](https://github.com/AKACoder/ABCEventBus/blob/master/README_zh.md)
-An simple post/receive eventbus.   
 
 ### about README and  'ABC'
 - My english is not good enough, so i use google translate to complete this README.  
